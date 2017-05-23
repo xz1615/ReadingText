@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>SmallSong</title>
+<style type="text/css">
+.content{
+    text-indent: 28px;
+}
+p{
+    font-size: 14px;
+    font-family: "PingFang SC";
+}
+.btn{
+    padding: 6px 12px;
+    font-size: 14px;
+    background-color: white;
+    border: 1px solid #606060;
+    border-radius: 4px;
+    -webkit-appearance: none;
+    margin:10px auto;
+    background-color: grey; 
+    color: white;
+}
+.time{
+    -webkit-appearance: none;
+    margin:10px auto;
+}
+.divbutton{
+    text-align:center;
+
+}
+.img{
+    width:100%;
+    margin-top: 10px;
+}
+}
+</style>
+</head>
+<body>
+<div class="divbutton" id="jump"><input type="text" class="time" value="00:00"></div>
+<div class="divbutton"><a href="#jump1"><input type="button" class="btn" value="开始阅读"></a></div>
+<div><img src="img/Song-14pt.png"  alt="Song-14pt" class="img"  id="jump1"/></div>
+<div class="divbutton"><a href="#jump"><input type="button" class="btn" value="结束阅读"></a></div>
+<script>
+
+    var oTxt=document.getElementsByTagName("input")[0];
+    var oStart=document.getElementsByTagName("input")[1];
+    var oStop=document.getElementsByTagName("input")[2];
+    var n= 0, timer=null;
+    //开始计时
+    oStart.onclick= function () {
+        clearInterval(timer);
+        timer=setInterval(function () {
+            n++;
+            var m=parseInt(n/60);
+            var s=parseInt(n%60);
+            oTxt.value=toDub(m)+":"+toDub(s);
+        },1000/60);
+    };
+    //暂停并且清空计时器
+    oStop.onclick= function () {
+        clearInterval(timer);
+    }
+    //补零
+    function toDub(n){
+        return n<10?"0"+n:""+n;
+    }
+</script>
+</body>
+</html>
