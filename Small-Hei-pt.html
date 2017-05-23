@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>SmallHei</title>
+<style type="text/css">
+.content{
+    text-indent: 28px;
+}
+p{
+    font-size: 14pt;
+    font-family: "PingFang SC";
+}
+.btn{
+    padding: 6px 12px;
+    font-size: 14px;
+    background-color: white;
+    border: 1px solid #606060;
+    border-radius: 4px;
+    -webkit-appearance: none;
+    margin:10px auto;
+    background-color: grey; 
+    color: white;
+}
+.time{
+    -webkit-appearance: none;
+    margin:10px auto;
+}
+.divbutton{
+    text-align:center;
+}
+.img{
+    width:100%;
+}
+}
+</style>
+</head>
+<body>
+<div class="divbutton" id="jump"><input type="text" class="time" value="00:00"></div>
+<div class="divbutton"><a href="#jump1"><input type="button" class="btn" value="开始阅读"></a></div>
+<div class="content" id="jump1">
+    <p>日前，南京在国内城市中首个提出将申报世界“文学之都”，引起了关注和热议。关注和热议的原因，在我看来主要是，南京当得起“文学之都”的称号吗？凭什么是南京？</p>
+    <p>其实，提出这样的疑问，或者说对南京“不服气”，原本是有一些误解的。因为所谓的“文学之都”，很多人可能觉得是“首都”的意思。而实际上，全世界已经有20个城市入选“文学之都”。“文学之都”只是联合国“创意城市网络”授予某些城市的七大主题荣誉称号之一，包括文学之都、音乐之都、电影之都、设计之都、民间艺术之都、媒体艺术之都、烹饪美食之都等。如果改成“文学之城”的说法，恐怕大多数人就能更容易地接受了。</p>
+    <p>毫无疑问，南京是一个跟文学渊源颇深的城市。作为六朝古都，首批国家历史文化名城，南京在文学史上的余韵不散，近代也留下无数文人逸事，当代也有苏童、毕飞宇和叶兆言等名家。无论是诗词，还是散文、小说，南京都可以说是一个“重镇”。南京的书店也比较多，整个城市的气息具有“文学腔调”，对作家有一种发自内心的尊重。而文学对一座城市的意义也不言而喻，一些作家、作品甚至让城市风格印上了深深的烙印。</p>
+    <p>当然，“文学之都”或者“文学之城”，更重要的可能是文学氛围。南京这座城市现在的文学氛围怎么样？从不同角度看答案会不一样。比如看出版的文学作品，乃至各种官方非官方的文学活动，确实数量不少，挺热闹的。但看民众对文学的热情，与过去那种对“缪斯”的追崇，完全不可同日而语。在波兰的“文学之都”克拉科夫街头，有排得长长的队伍“等诗人”。英国爱丁堡申报命名时说“爱丁堡是一座建立在文学上的城市”，南京有底气说这样的话吗？</p>
+    <p>公众对南京申办世界“文学之都”感到惊讶，或者说不够认同，还有一个原因是，中国文学的国际交流少，尤其是“走出去”较少。且不说至今只有莫言一个人获得诺奖，我们当代文学作品的对外翻译就远远不够，更不要说销售了。而在欧洲的许多国家、城市，情况是远远不一样的。冰岛是小语种国家，雷克雅未克2011年被授予“文学之都”称号，雷克雅未克只有20万人口，除了有丰富的中世纪文学遗产外，还特别注重文学的教育、保护和传播，在发扬文学在现代城市景观、现代社会和居民生活中所起的作用方面，做出了杰出的贡献。</p>
+    <p>南京为何会申办世界“文学之都”？当地著名作家、政府部门与评选方“一拍即合”固然是一方面，但如果放到近年来中国的大背景下，这样的申办可以说是必然的。就像各地积极申报“非遗”，以及各种“XX城市”称号一样。在地方政府的眼中，文化能够提升城市形象，促进经济和社会发展，也能显示主政官员的政绩。从相当意义上讲，南京申报的其实是“文化之城”，是在打造“城市名片”，与文学爱好者理解的文学的内涵与外延，并不完全相等。</p>
+    <p>如果说，南京够不上申办世界“文学之都”，那中国还有那些城市够得上呢？实际上，文学历史、文学名家、文学现状与南京相当的，国内肯定能找出几个。此前有消息称，上海、深圳都有意申报或打造“文学之都”。国内还有一些以文学为特色的小城，地方已经建了作家创作基地、授了称号，但作为世界级还有差距。而南京这样的城市，成为世界“文学之城”，虽然可能尚有一定差距，但通过努力是可以补上的。</p>
+    <p>怕就怕“醉翁之意不在酒”，申办“文学之都”主要不是为了文学，而是想搞“文化搭台，经济唱戏”，甚至像有的地方为公园申报世遗，只为门票涨价。</p>
+</div>
+<div class="divbutton"><a href="#jump"><input type="button" class="btn" value="结束阅读"></a></div>
+<script>
+    var oTxt=document.getElementsByTagName("input")[0];
+    var oStart=document.getElementsByTagName("input")[1];
+    var oStop=document.getElementsByTagName("input")[2];
+    var n= 0, timer=null;
+    //开始计时
+    oStart.onclick= function () {
+        clearInterval(timer);
+        timer=setInterval(function () {
+            n++;
+            var m=parseInt(n/60);
+            var s=parseInt(n%60);
+            oTxt.value=toDub(m)+":"+toDub(s);
+        },1000/60);
+    };
+    //暂停并且清空计时器
+    oStop.onclick= function () {
+        clearInterval(timer);
+    }
+    //补零
+    function toDub(n){
+        return n<10?"0"+n:""+n;
+    }
+</script>
+
+</body>
+</html>
